@@ -1,0 +1,15 @@
+.header {
+    text-align: center;
+    background-color:#301934;
+    padding: 2%;
+}
+
+.header h1 {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.87);
+}
+
