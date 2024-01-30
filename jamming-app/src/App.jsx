@@ -5,15 +5,21 @@ import Search from './components/Search/Search'
 
 function App() {
 
-  const [input, setInput] = useState('Search for an artist, song etc. ')
+  const [input, setInput] = useState('')
 
-  
+  //Return search query to console
+  const returnSearch = () => {
+    const userInput = console.log(document.getElementById('userInput').value)
+      return {
+        userInput
+      }
+  }
 
 
   return (
     <>
       <Header />
-      <Search input={input}/>
+      <Search search={returnSearch}/>
     </>
   )
 }

@@ -2,15 +2,14 @@ import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import './Search.css';
 
-const Search = () => {
+const Search = ({search}) => {
+
   return (
-    <div >
-      <form className='searchContainer'>
-        <input type='text' placeholder='Enter a song title or artist name...'></input>
-        <button className='searchButton' type='submit'>
+    <div className='searchContainer'>
+        <input id='userInput' type='text' placeholder='Enter a song title or artist name...'></input>
+        <button className='searchButton' onClick={search} >
         <CiSearch style={{color: 'black', fontSize: '2rem'}}/>
         </button>
-        </form>
     </div>
   )
 }
