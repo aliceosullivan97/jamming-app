@@ -1,0 +1,17 @@
+.resultsContainer {
+    background-color: rgba(48,25,52, 0.6);
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+    width: 40%;
+    padding: 1em;
+    height: 40%;
+    border-radius: 1%;
+    margin-top: 5%;
+}
+
+.resultsContainer h1 {
+    font-size: 1.5em;
+    padding-left: 0.75em;
+    padding-top: 0.4em;
+    font-weight: bold;
+}

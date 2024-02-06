@@ -1,0 +1,27 @@
+.trackInformation {
+    padding: 0.8em;
+    border-bottom: solid;
+    border-bottom-width: 0.05px;
+    border-color: rgba(255, 255, 255, 0.4);
+    
+    
+}
+
+.addButton {
+    display: flex;
+    
+}
+
+.songTitle {
+    font-size: 1em;
+    padding: 0.25em;
+    
+    
+}
+
+.songInfo {
+    font-size: 0.9em;
+    padding: 0.25em;
+    font-weight: 300;
+   
+}
