@@ -13,7 +13,9 @@ function App() {
   const [input, setInput] = useState('');
   const [accessToken, setAccessToken] = useState('');
   const [songs, setSongs] = useState([]);
-  const [trackNames, setTrackNames] = useState([]);
+  const [playlistTracks, setPlaylistTracks] = useState([]);
+  
+  
   
 
   useEffect(() => {
@@ -57,21 +59,26 @@ function App() {
     .then(data => {
       console.log(data);
       setSongs(data.tracks);
-    
-
-    
     })
-
+  
   
   }
 
-  console.log(songs);
+  //Add track to playlist
+  const addTrack = (track) => {
+    if (playlistTracks.some((savedTrack) => savedTrack.id === track.id))
+      return;
 
+    setPlaylistTracks((prev) => [...prev, track]);
+  };
+
+
+  const removeTrack = (track) => {
+    setPlaylistTracks((prevTracks) => 
+      prevTracks.filter((currentTrack) => currentTrack.id !== track.id)
+    );
+  };
   
- 
- 
-
-
 
 
   return (
@@ -79,8 +86,8 @@ function App() {
       <Header />
       <Search search={returnSearch}/>
       <div className='resultsAndPlaylist'>
-        <Results trackNames={trackNames} songs={songs}/>
-        <Playlist />
+        <Results songs={songs} onAdd={addTrack}/>
+        <Playlist songs={songs} playlistTracks={playlistTracks} onRemove={removeTrack}/>
       </div>
       
     </>

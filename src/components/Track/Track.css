@@ -1,10 +1,11 @@
-.trackInformation {
+.eachTrack {
     padding: 0.8em;
     border-bottom: solid;
     border-bottom-width: 0.05px;
     border-color: rgba(255, 255, 255, 0.4);
-    
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
 }
 
 .addButton {

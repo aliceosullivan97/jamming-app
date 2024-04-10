@@ -1,4 +1,4 @@
-.playlist {
+.playlistContainer {
     background-color: rgba(48,25,52, 0.6);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -13,4 +13,9 @@
 }
 .playlistName {
     background-color: rgba(48,25,52, 0);
+    font-size: 1.5em;
+    padding-left: 0.75em;
+    padding-top: 0.4em;
+    font-weight: bold;
+    
 }
