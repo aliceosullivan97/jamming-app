@@ -4,9 +4,10 @@ import './App.css'
 import Search from './components/Search/Search'
 import { Results } from './components/Results/Results'
 import Playlist from './components/Playlist/Playlist'
+import './credentials'
 
-const CLIENT_ID = 'a15b0fb9f2964bb6b1edeec7d0041d85'
-const CLIENT_SECRET = 'af60194bd8f14d1785d0f5e94d938469'
+const CLIENT_ID = ClientID
+const CLIENT_SECRET = ClientSecret
 
 function App() {
 
